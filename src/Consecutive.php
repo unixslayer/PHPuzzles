@@ -3,13 +3,10 @@ declare(strict_types = 1);
 
 namespace Unixslayer;
 
-class Consecutive
+class Consecutive implements ConsecutiveInterface
 {
     /**
-     * @param array $words
-     * @param int $wordCount
-     *
-     * @return string
+     * {@inheritDoc}
      */
     public function getLongestConsecutiveString(array $words, int $wordCount): string
     {

@@ -5,18 +5,14 @@ namespace UnixslayerTest;
 
 use PHPUnit\Framework\TestCase;
 use Unixslayer\Consecutive;
+use Unixslayer\ConsecutiveInterface;
 
 class ConsecutiveTest extends TestCase
 {
     /**
-     * @var Consecutive
+     * @var ConsecutiveInterface
      */
     private $service;
-
-    protected function setUp(): void
-    {
-        $this->service = new Consecutive();
-    }
 
     /**
      * @param array $words
@@ -44,5 +40,10 @@ class ConsecutiveTest extends TestCase
             ],
             [[], 3, ""]
         ];
+    }
+
+    protected function setUp(): void
+    {
+        $this->service = new Consecutive();
     }
 }

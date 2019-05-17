@@ -3,13 +3,10 @@ declare(strict_types = 1);
 
 namespace Unixslayer;
 
-class Anagrams
+class Anagrams implements AnagramsInterface
 {
     /**
-     * @param string $word
-     * @param string[] $anagram
-     *
-     * @return string[]
+     * {@inheritDoc}
      */
     public function resolveAnagrams(string $word, array $words): array
     {

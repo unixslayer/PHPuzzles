@@ -1,5 +1,9 @@
 # PHPuzzles
 
+Some PHP Puzzles I play with from following sources:
+
+- [CodeWars](https://www.codewars.com)
+
 ### Anagrams
 
 The task is to write a function that will find all the anagrams of a word from a list.

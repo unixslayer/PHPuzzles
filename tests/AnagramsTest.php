@@ -5,18 +5,14 @@ namespace UnixslayerTest;
 
 use PHPUnit\Framework\TestCase;
 use Unixslayer\Anagrams;
+use Unixslayer\AnagramsInterface;
 
 final class AnagramsTest extends TestCase
 {
     /**
-     * @var Anagrams
+     * @var AnagramsInterface
      */
     private $anagramService;
-
-    protected function setUp(): void
-    {
-        $this->anagramService = new Anagrams();
-    }
 
     /**
      * @param string $word
@@ -46,5 +42,10 @@ final class AnagramsTest extends TestCase
             ['racer', ['crazer', 'carer', 'racar', 'caers', 'racer'], ['carer', 'racer']],
             ['laser', ['lazing', 'lazy', 'lacer'], []],
         ];
+    }
+
+    protected function setUp(): void
+    {
+        $this->anagramService = new Anagrams();
     }
 }
