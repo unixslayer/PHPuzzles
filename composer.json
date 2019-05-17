@@ -1,36 +1,39 @@
 {
-    "name": "unixslayer/phpuzzles",
-    "type": "project",
-    "license": "GNU GPL v3",
-    "authors": [
-        {
-            "name": "Piotr Zając",
-            "email": "piotr.zajac@unixslayer.pl"
-        }
-    ],
-    "minimum-stability": "stable",
-    "autoload": {
-        "psr-4": {
-            "Unixslayer\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "UnixslayerTest\\": "test/"
-        }
-    },
-    "scripts": {
-        "check": [
-            "@cs-check",
-            "@test"
-        ],
-        "cs-check": "phpcs",
-        "cs-fix": "phpcbf",
-        "test": "phpunit --colors=always",
-        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.1",
-        "squizlabs/php_codesniffer": "^3.4"
+  "name": "unixslayer/phpuzzles",
+  "type": "project",
+  "license": "GNU GPL v3",
+  "authors": [
+    {
+      "name": "Piotr Zając",
+      "email": "piotr.zajac@unixslayer.pl"
     }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Unixslayer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "UnixslayerTest\\": "test/"
+    }
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.1",
+    "squizlabs/php_codesniffer": "^3.4"
+  },
+  "require": {
+    "ext-bcmath": "*"
+  }
 }
