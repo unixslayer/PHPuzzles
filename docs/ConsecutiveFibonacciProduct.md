@@ -30,5 +30,5 @@ Examples
     productFib(800) # should return [34, 55, false], 
                 # since F(8) = 21, F(9) = 34, F(10) = 55 and 21 * 34 < 800 < 34 * 55
 
-You can see examples in [tests](tests/ConsecutiveFibonacciTest.php).
+You can see examples in [tests](../tests/ConsecutiveFibonacciTest.php).
 
