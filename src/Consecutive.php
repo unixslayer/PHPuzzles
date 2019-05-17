@@ -13,11 +13,18 @@ class Consecutive
      */
     public function getLongestConsecutiveString(array $words, int $wordCount): string
     {
-        if ($this->isInputValid($words, $wordCount)) {
-
+        if ($this->isInputInvalid($words, $wordCount)) {
+            return '';
         }
 
-        return '';
+        $currentResult = '';
+        $wordsCount = count($words);
+        for ($i = 0; $i < $wordsCount; $i++) {
+            $result = implode('', array_slice($words, $i, $wordCount));
+            $currentResult = (strlen($result) > strlen($currentResult)) ? $result : $currentResult;
+        }
+
+        return $currentResult;
     }
 
     /**
@@ -26,7 +33,7 @@ class Consecutive
      *
      * @return bool
      */
-    private function isInputValid(array $words, int $wordCount): bool
+    private function isInputInvalid(array $words, int $wordCount): bool
     {
         return empty($words) || $wordCount > count($words) || $wordCount <= 0;
     }

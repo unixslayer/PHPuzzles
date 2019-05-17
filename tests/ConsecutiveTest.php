@@ -18,7 +18,6 @@ class ConsecutiveTest extends TestCase
         $this->service = new Consecutive();
     }
 
-
     /**
      * @param array $words
      * @param int $wordsCount
@@ -31,7 +30,10 @@ class ConsecutiveTest extends TestCase
         $this->assertEquals($expectedString, $this->service->getLongestConsecutiveString($words, $wordsCount));
     }
 
-    public function examplesProvider()
+    /**
+     * @return array
+     */
+    public function examplesProvider(): array
     {
         return [
             [["zone", "abigail", "theta", "form", "libe", "zas"], 2, "abigailtheta"],
