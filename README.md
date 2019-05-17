@@ -28,7 +28,7 @@ Task is to create a calculator which evaluates expressions in Reverse Polish not
 
 [Problem](docs/ReversePolishNotation.md) [Solution](src/ReversePolishNotationCalculator.php) [Test](tests/ReversePolishNotationCalculatorTest.php)
 
-### # Consecutive Fibonacci Product
+### Consecutive Fibonacci Product
 
 Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying
 
