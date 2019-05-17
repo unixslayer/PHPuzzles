@@ -21,3 +21,9 @@ The task is to return the first longest string consisting of specific number of 
 The task is to write a function that returns the sum of all natural numbers that are the multiples of 3 or 5 below the number passed in.
 
 [Problem](docs/Multipies.md) [Solution](src/Multipies.php) [Test](tests/MultipiesTest.php)
+
+### Reverse Polish Notation (RPN)
+
+Task is to create a calculator which evaluates expressions in Reverse Polish notation.
+
+[Problem](docs/ReversePolishNotation.md) [Solution](src/ReversePolishNotation.php) [Test](tests/ReversePolishNotationTest.php)
