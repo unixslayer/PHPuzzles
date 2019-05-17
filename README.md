@@ -15,3 +15,9 @@ The task is to write a function that will find all the anagrams of a word from a
 The task is to return the first longest string consisting of specific number of consecutive strings taken in the array.
 
 [Problem](docs/Consecutive.md) [Solution](src/Consecutive.php) [Test](tests/ConsecutiveTest.php)
+
+### Multipies of 3 or 5
+
+The task is to write a function that returns the sum of all natural numbers that are the multiples of 3 or 5 below the number passed in.
+
+[Problem](docs/Multipies.md) [Solution](src/Multipies.php) [Test](tests/MultipiesTest.php)
