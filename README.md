@@ -27,3 +27,11 @@ The task is to write a function that returns the sum of all natural numbers that
 Task is to create a calculator which evaluates expressions in Reverse Polish notation.
 
 [Problem](docs/ReversePolishNotation.md) [Solution](src/ReversePolishNotationCalculator.php) [Test](tests/ReversePolishNotationCalculatorTest.php)
+
+### # Consecutive Fibonacci Product
+
+Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying
+
+    F(n) * F(n+1) = prod.
+
+[Problem](docs/ConsecutiveFibonacciProduct.md) [Solution](src/ConsecutiveFibonacci.php) [Test](tests/ConsecutiveFibonacciTest.php)
