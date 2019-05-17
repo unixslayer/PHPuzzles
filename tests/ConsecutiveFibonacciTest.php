@@ -52,6 +52,4 @@ class ConsecutiveFibonacciTest extends TestCase
     {
         $this->calculator = new ConsecutiveFibonacci(new Fibonacci());
     }
-
-
 }
