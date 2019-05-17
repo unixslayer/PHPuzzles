@@ -26,4 +26,4 @@ The task is to write a function that returns the sum of all natural numbers that
 
 Task is to create a calculator which evaluates expressions in Reverse Polish notation.
 
-[Problem](docs/ReversePolishNotation.md) [Solution](src/ReversePolishNotation.php) [Test](tests/ReversePolishNotationTest.php)
+[Problem](docs/ReversePolishNotation.md) [Solution](src/ReversePolishNotationCalculator.php) [Test](tests/ReversePolishNotationCalculatorTest.php)
